@@ -1,0 +1,21 @@
+run = "python app.py"
+modules = ["python-base-3.13"]
+
+[nix]
+channel = "stable-24_05"
+pkgs = ["python311"] 
+
+[deployment]
+run = ["sh", "-c", "python app.py"]
+
+[[ports]]
+localPort = 5000
+externalPort = 80
+exposeLocalhost = true
+
+# run = "python app.py"
+# [nix]
+# channel = "stable-24_05"
+
+# [deployment]
+# run = ["sh", "-c", "python app.py"]
