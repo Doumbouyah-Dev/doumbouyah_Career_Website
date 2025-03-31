@@ -1,0 +1,21 @@
+
+
+<div class = "jov-div row">
+   <div class='col-9'>
+      {% if 'title' in job %}
+      <h3 class='job-title'>{{job['title']}}</h3>
+      {% endif %}
+       {% if 'location' in job %}
+      <div>Location: {{job['location']}}</div>
+      {% endif %}
+      {% if 'salary' in job %}
+      <div class = 'salary-div'> Salary: {{job['salary']}}
+      </div>
+       {% endif %}
+   </div>
+   <div class='col-3'>
+      <button type="button" class="btn btn-primary">Apply</button>
+
+   </div>
+
+   </div>
